@@ -1,0 +1,45 @@
+.nav {
+    width: 100%;
+    min-height: 70px;
+    padding-top: 28px;
+    @include flex (flex, center, center);
+    .nav__box {
+        @include flex (flex, space-between, center);
+        .nav__box__left {
+            width: 49%;
+            flex-wrap: wrap;
+            @include flex (flex, space-between, center);
+            .nav__box__logo {
+                .logo {
+                    @include text (30px, 700, 45px, $dark);
+                }
+            }
+            .nav__box__items {
+                width: 211px;
+                flex-wrap: wrap;
+                @include flex (flex, space-between, center);
+                a {
+                    display: flex;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    span {
+                        color: $coral;
+                    }
+                    
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+        .nav__box__img {
+            @include flex (flex, center, center);
+            img {
+                width: 38px;
+                height: 19px;
+            }
+        }
+    }
+}

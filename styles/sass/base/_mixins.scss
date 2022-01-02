@@ -1,0 +1,28 @@
+@mixin flex ($flex, $justify, $align) {
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin text ($size, $weight, $line, $color) {
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+    color: $color;
+}
+
+@mixin cube ($width, $height, $left, $top) {
+    width: $width;
+    height: $height;
+    left: $left;
+    top: $top;
+}
+
+@mixin input ($background, $width, $height, $radius, $border) {
+    background: $background;
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    border: $border;
+
+}
