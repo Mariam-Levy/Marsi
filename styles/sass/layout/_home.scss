@@ -1,5 +1,8 @@
 .container {
     width: 70%;
+    @include small {
+        width: 80%;
+    }
 }
 
 .header {
@@ -164,7 +167,7 @@
         }
         .middle__email {
             width: 55%;
-            height: 78px;
+            /* height: 78px; */
             background: $fondo;
             padding: 20px 35px;
             @include flex (flex, space-between, center);
@@ -176,10 +179,12 @@
                 padding: 17px 10px;
                 flex-wrap: wrap;
             }
-            .email {
+            .email-news {
                 @include text (16px, 400, 24px, $text);
                 @include small {
                     font-size: 12px;
+                    width: 100%;
+                    margin-bottom: 20px;
                 }
             }
             .now {
@@ -202,9 +207,13 @@
             width: 45%;
             display: flex;
             align-items: center;
+            
             @include medium {
                 width: 100%;
                 justify-content: center;
+            }
+            @include small {
+                margin-bottom: 20px;
             }
             img {
                 width: 100%;
@@ -220,6 +229,9 @@
             justify-content: center;
             @include medium {
                 width: 100%;
+            }
+            @include small {
+                align-items: center;
             }
             .skills__texts__title {
                 width: 75%;
@@ -244,6 +256,10 @@
                 }
                 .design {
                     text-align: center;
+                    @include small {
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
                     p {
                         @include text (16px, 400, 24px, $dark);
                         @include medium {
@@ -536,12 +552,15 @@
             }
 
             .portfolio__text__arrow {
-                @include flex (flex, space-between, center);
                 width: 50%;
+                @include flex (flex, space-between, center);
                 @include medium {
                     order: 2;
                     width: 100%;
                     justify-content: space-around;
+                }
+                @include small {
+                    margin-bottom: 20px;
                 }
                 .arrow__box {
                     background: $color;
@@ -584,6 +603,9 @@
                 font-size: 28px;
                 font-weight: 700;
                 color: $dark;
+                @include small {
+                    margin-bottom: 10px;
+                }
             }
         }
     }
@@ -631,6 +653,10 @@
                         .email {
                             width: 40%;
                             text-align: center;
+                            @include small {
+                                /* width: 100%; */
+                                margin-bottom: 20px;
+                            }
                             p {
                                 @include text (12px, 400, 24px, $dark);
                                 white-space: nowrap;
