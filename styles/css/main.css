@@ -391,6 +391,9 @@ a {
           width: 100%;
           justify-content: space-around;
           order: 2; } }
+      @media (max-width: 576px) {
+        .main .main__boxes .main__mini-boxes {
+          width: 80%; } }
       .main .main__boxes .main__mini-boxes .mini-one {
         width: 93.75px;
         height: 93.75px;

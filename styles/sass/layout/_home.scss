@@ -314,6 +314,10 @@
                 justify-content: space-around;
                 order: 2;
             }
+
+            @include small {
+                width: 80%;
+            }
             .mini-one {
                 width: 93.75px;
                 height: 93.75px;
